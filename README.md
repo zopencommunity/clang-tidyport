@@ -1,4 +1,4 @@
-[![Automatic version updates](https://github.com/zopencommunity/clang-tidyport/actions/workflows/bump.yml/badge.svg)](https://github.com/ZOSOpenTools/clang-tidyport/actions/workflows/bump.yml)
+[![Automatic version updates](https://github.com/zopencommunity/clang-tidyport/actions/workflows/bump.yml/badge.svg)](https://github.com/zopencommunity/clang-tidyport/actions/workflows/bump.yml)
 
 # clang-tidy
 
