@@ -1,22 +1,22 @@
-[![Automatic version updates](https://github.com/zopencommunity/clang-formatport/actions/workflows/bump.yml/badge.svg)](https://github.com/ZOSOpenTools/clang-formatport/actions/workflows/bump.yml)
+[![Automatic version updates](https://github.com/zopencommunity/clang-tidyport/actions/workflows/bump.yml/badge.svg)](https://github.com/ZOSOpenTools/clang-tidyport/actions/workflows/bump.yml)
 
-# clang-format
+# clang-tidy
 
-the llvm clang format tool
+the llvm clang tidy tool
 
 # Installation and Usage
 
 Use the zopen package manager ([QuickStart Guide](https://zopen.community/#/Guides/QuickStart)) to install:
 ```bash
-zopen install clang-format
+zopen install clang-tidy
 ```
 
 # Building from Source
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/zopencommunity/clang-formatport.git
-cd clang-formatport
+git clone https://github.com/zopencommunity/clang-tidyport.git
+cd clang-tidyport
 ```
 2. Build using zopen:
 ```bash
