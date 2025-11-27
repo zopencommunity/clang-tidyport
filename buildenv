@@ -27,6 +27,7 @@ export ZOPEN_STABLE_DEPS="cmake make ninja check_python ccache libxml2 ncurses z
 ### Build stage control environment variables
 ###
 
+
 export ZOPEN_CONFIGURE="cmake"
 export ZOPEN_CONFIGURE_OPTS="-S llvm -B build -G Ninja \
   --install-prefix \$ZOPEN_INSTALL_DIR/ \
@@ -39,8 +40,8 @@ export ZOPEN_CONFIGURE_OPTS="-S llvm -B build -G Ninja \
   -DLLVM_CCACHE_BUILD=ON \
   -DLLVM_TARGETS_TO_BUILD=host"
 
-export ZOPEN_MAKE="zopen_build"
 export ZOPEN_CLEAN="zopen_clean"
+export ZOPEN_MAKE="zopen_build"
 export ZOPEN_CHECK="zopen_check"
 export ZOPEN_INSTALL="zopen_install"
 
@@ -87,7 +88,6 @@ zopen_install()
 
 zopen_get_version()
 {
-  version=$($ZOPEN_INSTALL_DIR/bin/clang-tidy --version | awk '/LLVM version/ {print $3}')
-  echo $version
+  "$ZOPEN_INSTALL_DIR/bin/clang-tidy" --version | awk '/LLVM version/ {print $3}'
 }
 
