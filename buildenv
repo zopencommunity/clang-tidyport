@@ -1,5 +1,5 @@
 # bump: clang-tidy-version /CLANG_TIDY_VERSION="(.*)"/ https://github.com/llvm/llvm-project.git|semver:*
-export CLANG_TIDY_VERSION="21.1.8"
+export CLANG_TIDY_VERSION="22.1.0"
 export ZOPEN_STABLE_TAG="llvmorg-${CLANG_TIDY_VERSION}"
 
 ###
